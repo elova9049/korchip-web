@@ -22,6 +22,13 @@ function showPage(pageId) {
     document.querySelectorAll('.nav-link').forEach(a => {
         a.classList.toggle('page-active', a.dataset.pageNav === pageId);
     });
+
+    // Nav style: transparent only on home (scroll-driven); always solid on sub-pages
+    if (pageId === 'home') {
+        navbar.classList.toggle('nav-scrolled', window.pageYOffset > 100);
+    } else {
+        navbar.classList.add('nav-scrolled');
+    }
 }
 
 // Intercept all [data-page-nav] link clicks
@@ -65,7 +72,11 @@ if (savedLang === 'ko') switchLang('ko');
 
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('nav-scrolled', window.pageYOffset > 100);
+    // Only apply scroll-based nav style on the home page
+    const isHome = document.getElementById('page-home').classList.contains('active');
+    if (isHome) {
+        navbar.classList.toggle('nav-scrolled', window.pageYOffset > 100);
+    }
 });
 
 // ── Initial Page Load ──────────────────────────────────
