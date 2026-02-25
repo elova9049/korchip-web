@@ -6,15 +6,12 @@
     <title>Korchip | Advanced Energy Storage Solutions</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CDN — powers all utility classes (flex, grid, text-*, bg-*, etc.) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        'korchip-red': '#E31837'
-                    }
+                    colors: { 'korchip-red': '#E31837' }
                 }
             }
         }
@@ -64,18 +61,18 @@
                 </h1>
 
                 <p class="text-xl md:text-2xl text-gray-500 mb-4 fade-up delay-100 font-light">
-                    Advanced Energy Storage Solutions
+                    Pioneering Energy Storage Since 1990
                 </p>
 
                 <p class="text-base md:text-lg text-gray-400 mb-12 max-w-2xl mx-auto fade-up delay-200
                            font-light leading-relaxed" data-lang="en">
-                    Over 30 years of power electronics expertise delivering<br>
-                    next-generation supercapacitors &amp; LTO batteries
+                    35+ years of expertise in EDLC supercapacitors &amp; LTO batteries.<br>
+                    Trusted by engineers worldwide across transportation, industrial, and IoT applications.
                 </p>
                 <p class="text-base md:text-lg text-gray-400 mb-12 max-w-2xl mx-auto fade-up delay-200
                            font-light leading-relaxed" data-lang="ko">
-                    30년 이상의 전력 전자 기술력으로 만든<br>
-                    차세대 슈퍼커패시터 &amp; LTO 배터리
+                    35년 이상의 EDLC 슈퍼커패시터 &amp; LTO 배터리 전문 기술력.<br>
+                    교통, 산업, IoT 분야에서 전 세계 엔지니어들이 선택하는 에너지 저장 솔루션.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-3 justify-center fade-up delay-300">
@@ -95,24 +92,33 @@
     <!-- ══════════════════════════════════════════════════════ -->
     <div id="page-products" class="page">
 
-        <!-- ── Products: STARCAP ─────────────────────────────────── -->
+        <!-- ── STARCAP ───────────────────────────────────────────── -->
         <section class="section-full bg-white relative" id="products">
             <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12
                         grid md:grid-cols-2 gap-12 items-center">
 
                 <div class="order-2 md:order-1 fade-up">
-                    <p class="section-label">Supercapacitor</p>
+                    <p class="section-label">EDLC Supercapacitor</p>
                     <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
                         STARCAP<br><span class="text-gray-300">Series</span>
                     </h2>
-                    <p class="text-lg text-gray-500 mb-8 font-light leading-relaxed" data-lang="en">
-                        Over 1 million cycles with ultra-fast charge/discharge.
-                        The optimal solution for applications requiring instant high power.
+                    <p class="text-lg text-gray-500 mb-6 font-light leading-relaxed" data-lang="en">
+                        Over 1,000,000 cycles with ultra-fast millisecond charge/discharge.
+                        Available in coin, cylindrical, and module form factors — from 0.033F to 350F.
                     </p>
-                    <p class="text-lg text-gray-500 mb-8 font-light leading-relaxed" data-lang="ko">
-                        100만 사이클 이상의 수명과 초고속 충방전.
-                        순간적인 고출력이 필요한 모든 애플리케이션을 위한 최적의 솔루션.
+                    <p class="text-lg text-gray-500 mb-6 font-light leading-relaxed" data-lang="ko">
+                        100만 사이클 이상의 수명과 밀리초 단위 초고속 충방전.
+                        코인, 원통형, 모듈 타입으로 0.033F~350F 광범위한 용량을 제공합니다.
                     </p>
+                    <!-- Series list -->
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-xs font-medium bg-blue-50 text-blue-500 border border-blue-100 px-3 py-1 rounded-full">DCL</span>
+                        <span class="text-xs font-medium bg-blue-50 text-blue-500 border border-blue-100 px-3 py-1 rounded-full">DCLT</span>
+                        <span class="text-xs font-medium bg-blue-50 text-blue-500 border border-blue-100 px-3 py-1 rounded-full">DCS / DCST</span>
+                        <span class="text-xs font-medium bg-blue-50 text-blue-500 border border-blue-100 px-3 py-1 rounded-full">SM</span>
+                        <span class="text-xs font-medium bg-blue-50 text-blue-500 border border-blue-100 px-3 py-1 rounded-full">DR / DL / HP</span>
+                        <span class="text-xs font-medium bg-blue-50 text-blue-500 border border-blue-100 px-3 py-1 rounded-full">DRML / DRMH / HPML</span>
+                    </div>
                     <div class="flex gap-3">
                         <a href="#specs"      class="btn-primary" data-page-nav="specs"      data-lang="en">View Specs</a>
                         <a href="#specs"      class="btn-primary" data-page-nav="specs"      data-lang="ko">스펙 보기</a>
@@ -130,11 +136,10 @@
                             <svg class="w-28 h-28 mx-auto text-blue-300" fill="none"
                                  stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="0.8"
-                                      d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                      stroke-width="0.8" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                             <p class="mt-4 text-sm text-gray-400 font-medium tracking-wide">
-                                STARCAP Supercapacitor
+                                STARCAP EDLC Supercapacitor
                             </p>
                         </div>
                     </div>
@@ -142,7 +147,7 @@
             </div>
         </section>
 
-        <!-- ── Products: CHIPCELL ────────────────────────────────── -->
+        <!-- ── CHIPCELL LTO ───────────────────────────────────────── -->
         <section class="section-full bg-gray-50 relative">
             <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12
                         grid md:grid-cols-2 gap-12 items-center">
@@ -160,7 +165,7 @@
                                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                             <p class="mt-4 text-sm text-gray-400 font-medium tracking-wide">
-                                CHIPCELL LTO Module
+                                CHIPCELL LTO Battery
                             </p>
                         </div>
                     </div>
@@ -171,14 +176,21 @@
                     <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
                         CHIPCELL<br><span class="text-gray-300">LTO</span>
                     </h2>
-                    <p class="text-lg text-gray-500 mb-8 font-light leading-relaxed" data-lang="en">
-                        20,000+ cycles of extreme longevity.<br>
-                        Zero fire risk — a safe energy solution for the most demanding environments.
+                    <p class="text-lg text-gray-500 mb-6 font-light leading-relaxed" data-lang="en">
+                        From ultra-small coin cells for IoT to 20Ah prismatic modules for industrial use.
+                        5,000–20,000+ cycles, 2.4V nominal, 10C fast charge, zero fire risk.
                     </p>
-                    <p class="text-lg text-gray-500 mb-8 font-light leading-relaxed" data-lang="ko">
-                        20,000+ 사이클의 극한 수명.<br>
-                        화재 위험 제로 — 가장 까다로운 환경을 위한 안전한 에너지 솔루션.
+                    <p class="text-lg text-gray-500 mb-6 font-light leading-relaxed" data-lang="ko">
+                        IoT용 초소형 코인셀부터 산업용 20Ah 프리즈마틱 모듈까지.
+                        5,000~20,000+ 사이클, 공칭전압 2.4V, 10C 급속충전, 화재 위험 제로.
                     </p>
+                    <!-- Series list -->
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-xs font-medium bg-orange-50 text-orange-500 border border-orange-100 px-3 py-1 rounded-full">PS Series</span>
+                        <span class="text-xs font-medium bg-orange-50 text-orange-500 border border-orange-100 px-3 py-1 rounded-full">PE Series</span>
+                        <span class="text-xs font-medium bg-orange-50 text-orange-500 border border-orange-100 px-3 py-1 rounded-full">CL Series</span>
+                        <span class="text-xs font-medium bg-orange-50 text-orange-500 border border-orange-100 px-3 py-1 rounded-full">LT20 Series</span>
+                    </div>
                     <div class="flex gap-3">
                         <a href="#specs"      class="btn-primary" data-page-nav="specs"      data-lang="en">View Specs</a>
                         <a href="#specs"      class="btn-primary" data-page-nav="specs"      data-lang="ko">스펙 보기</a>
@@ -203,12 +215,8 @@
                 <div class="text-center mb-20 fade-up">
                     <span class="section-label" data-lang="en">Specifications</span>
                     <span class="section-label" data-lang="ko">제품 사양</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900" data-lang="en">
-                        Technical Specifications
-                    </h2>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900" data-lang="ko">
-                        기술 사양
-                    </h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900" data-lang="en">Technical Specifications</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900" data-lang="ko">기술 사양</h2>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
@@ -217,7 +225,7 @@
                     <div class="product-card fade-up">
                         <div class="flex items-center gap-3 mb-8">
                             <div class="w-3 h-3 rounded-full bg-cyan-400"></div>
-                            <h3 class="text-lg font-semibold text-gray-900">STARCAP Supercapacitor</h3>
+                            <h3 class="text-lg font-semibold text-gray-900">STARCAP — EDLC Supercapacitor</h3>
                         </div>
 
                         <div class="spec-item border-l-2 border-cyan-300">
@@ -227,54 +235,93 @@
                         </div>
 
                         <div class="spec-item border-l-2 border-cyan-300">
-                            <div class="spec-number text-cyan-500">ms</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Charge / Discharge Time</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">충방전 시간</div>
+                            <div class="spec-number text-cyan-500">0.033 ~ 350F</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Capacitance Range</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">정전용량 범위</div>
                         </div>
 
                         <div class="spec-item border-l-2 border-cyan-300">
-                            <div class="spec-number text-cyan-500">−40 – 70°C</div>
+                            <div class="spec-number text-cyan-500">−40 ~ +85°C</div>
                             <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Operating Temperature</div>
                             <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">동작 온도</div>
                         </div>
 
-                        <div class="spec-item border-l-2 border-cyan-300" style="margin-bottom:0">
-                            <div class="spec-number text-cyan-500">RoHS</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Compliance</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">규격 준수</div>
+                        <div class="spec-item border-l-2 border-cyan-300" style="margin-bottom:24px">
+                            <div class="spec-number text-cyan-500">2.5 ~ 5.5V</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Voltage Range</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">전압 범위</div>
+                        </div>
+
+                        <!-- Series breakdown -->
+                        <div class="border-t border-gray-100 pt-6">
+                            <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4" data-lang="en">Product Series</p>
+                            <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4" data-lang="ko">제품 시리즈</p>
+                            <div class="space-y-2 text-sm text-gray-500">
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">DCL / DCLT</span><span data-lang="en">Coin — 0.47~1.5F, up to 85°C</span><span data-lang="ko">코인 — 0.47~1.5F, 85°C</span></div>
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">DCS / DCST</span><span data-lang="en">Coin — 0.047~0.47F</span><span data-lang="ko">코인 소용량 — 0.047~0.47F</span></div>
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">SM</span><span data-lang="en">SMD — 0.033~0.07F</span><span data-lang="ko">SMD 실장 — 0.033~0.07F</span></div>
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">DR / DL / HP</span><span data-lang="en">Cylindrical — 1~350F</span><span data-lang="ko">원통형 — 1~350F</span></div>
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">DRML / DRMH / HPML</span><span data-lang="en">Module — 0.33~7.5F</span><span data-lang="ko">모듈 — 0.33~7.5F</span></div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- CHIPCELL -->
+                    <!-- CHIPCELL LTO -->
                     <div class="product-card fade-up delay-100">
                         <div class="flex items-center gap-3 mb-8">
                             <div class="w-3 h-3 rounded-full bg-orange-400"></div>
-                            <h3 class="text-lg font-semibold text-gray-900">CHIPCELL LTO</h3>
+                            <h3 class="text-lg font-semibold text-gray-900">CHIPCELL LTO Battery</h3>
                         </div>
 
                         <div class="spec-item border-l-2 border-orange-300">
                             <div class="spec-number text-orange-400">20,000+</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Cycle Life</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">사이클 수명</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Cycle Life (LT20)</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">사이클 수명 (LT20)</div>
                         </div>
 
                         <div class="spec-item border-l-2 border-orange-300">
+                            <div class="spec-number text-orange-400">2.4V</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Nominal Voltage</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">공칭 전압</div>
+                        </div>
+
+                        <div class="spec-item border-l-2 border-orange-300">
+                            <div class="spec-number text-orange-400">10C</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Fast Charge Rate (5–10 min)</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">급속 충전 (5~10분)</div>
+                        </div>
+
+                        <div class="spec-item border-l-2 border-orange-300" style="margin-bottom:24px">
                             <div class="spec-number text-orange-400">0%</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Fire Risk</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">화재 위험</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Fire / Explosion Risk</div>
+                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">화재 / 폭발 위험</div>
                         </div>
 
-                        <div class="spec-item border-l-2 border-orange-300">
-                            <div class="spec-number text-orange-400">−30 – 60°C</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Operating Temperature</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">동작 온도</div>
+                        <!-- Series breakdown -->
+                        <div class="border-t border-gray-100 pt-6">
+                            <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4" data-lang="en">Product Series</p>
+                            <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4" data-lang="ko">제품 시리즈</p>
+                            <div class="space-y-2 text-sm text-gray-500">
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">PS Series</span><span data-lang="en">Cylindrical — 40~100mAh, 10C</span><span data-lang="ko">원통형 — 40~100mAh, 10C</span></div>
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">PE Series</span><span data-lang="en">Cylindrical — 12~30mAh, 5C</span><span data-lang="ko">원통형 — 12~30mAh, 5C</span></div>
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">CL Series</span><span data-lang="en">Coin — 0.4~1.8mAh, RTC/IoT</span><span data-lang="ko">코인 — 0.4~1.8mAh, RTC/IoT</span></div>
+                                <div class="flex justify-between"><span class="font-medium text-gray-700">LT20 Series</span><span data-lang="en">Prismatic — 20Ah, ≥20,000 cycles</span><span data-lang="ko">프리즈마틱 — 20Ah, 20,000+ 사이클</span></div>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="spec-item border-l-2 border-orange-300" style="margin-bottom:0">
-                            <div class="spec-number text-orange-400">Fast</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="en">Charge Capability</div>
-                            <div class="text-gray-400 text-sm uppercase tracking-wider" data-lang="ko">급속 충전</div>
-                        </div>
+                <!-- Certifications -->
+                <div class="mt-16 fade-up delay-200">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-6" data-lang="en">Certifications &amp; Compliance</p>
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-6" data-lang="ko">인증 및 규격</p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 px-4 py-2 rounded-lg">ISO 9001</span>
+                        <span class="text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 px-4 py-2 rounded-lg">IATF 16949</span>
+                        <span class="text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 px-4 py-2 rounded-lg">UL Certified</span>
+                        <span class="text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 px-4 py-2 rounded-lg">RoHS 1~3</span>
+                        <span class="text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 px-4 py-2 rounded-lg">CE Marking</span>
+                        <span class="text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 px-4 py-2 rounded-lg">UN 38.3</span>
                     </div>
                 </div>
             </div>
@@ -293,12 +340,8 @@
                 <div class="text-center mb-20 fade-up">
                     <span class="section-label" data-lang="en">Technology</span>
                     <span class="section-label" data-lang="ko">기술</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="en">
-                        Science Behind the Power
-                    </h2>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="ko">
-                        기술의 과학
-                    </h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="en">Science Behind the Power</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="ko">기술의 과학</h2>
                     <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light" data-lang="en">
                         Two distinct chemistries. One commitment to reliability.
                     </p>
@@ -309,7 +352,7 @@
 
                 <div class="grid md:grid-cols-2 gap-8">
 
-                    <!-- Supercapacitor Technology -->
+                    <!-- STARCAP Technology -->
                     <div class="tech-card fade-up">
                         <div class="tech-icon bg-blue-50">
                             <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -318,24 +361,22 @@
                             </svg>
                         </div>
                         <p class="text-xs font-semibold text-cyan-500 tracking-widest uppercase mb-2">STARCAP</p>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-lang="en">
-                            Electrochemical Double Layer
-                        </h3>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-lang="ko">
-                            전기화학 이중층 원리
-                        </h3>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-lang="en">Electrochemical Double Layer</h3>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-lang="ko">전기화학 이중층 원리 (EDLC)</h3>
                         <p class="text-gray-500 leading-relaxed mb-8 font-light" data-lang="en">
-                            Supercapacitors store energy electrostatically at the electrode–electrolyte
-                            interface. With no chemical reactions involved, STARCAP delivers full power in
-                            milliseconds — engineered for regenerative braking, UPS backup, industrial
-                            cranes, and renewable energy stabilization.
+                            EDLC supercapacitors store energy electrostatically at the electrode–electrolyte
+                            interface. With no chemical reactions, STARCAP delivers full power in milliseconds
+                            and sustains over 1,000,000 charge cycles — ideal for regenerative braking,
+                            UPS backup, industrial cranes, meters, and renewable energy stabilization.
+                            Korchip acquired Murata's EDLC portfolio in 1994 and Samsung Electro-Mechanics'
+                            EDLC line in 2002, cementing 35+ years of supercapacitor leadership.
                         </p>
                         <p class="text-gray-500 leading-relaxed mb-8 font-light" data-lang="ko">
-                            슈퍼커패시터는 전극과 전해질 계면에서 전하를 정전기적으로 저장합니다.
-                            화학 반응이 없어 밀리초 단위의 완전한 전력 공급이 가능합니다.
-                            회생 제동, UPS 백업, 산업용 크레인, 신재생에너지 안정화에 최적화된 솔루션입니다.
+                            EDLC 슈퍼커패시터는 전극과 전해질 계면에서 정전기적으로 에너지를 저장합니다.
+                            화학 반응이 없어 밀리초 단위 완전 출력과 100만 사이클 이상의 수명을 실현합니다.
+                            회생 제동, UPS 백업, 산업용 크레인, 계량기, 신재생에너지 안정화에 최적화되어 있습니다.
+                            1994년 Murata EDLC 사업부, 2002년 삼성전기 EDLC 라인을 인수하며 35년 이상의 기술력을 쌓아왔습니다.
                         </p>
-
                         <ul class="space-y-3">
                             <li class="flex items-center gap-3">
                                 <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0"></span>
@@ -349,18 +390,18 @@
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0"></span>
-                                <span class="text-gray-500 text-sm" data-lang="en">No electrolyte decomposition</span>
-                                <span class="text-gray-500 text-sm" data-lang="ko">전해질 분해 없음</span>
+                                <span class="text-gray-500 text-sm" data-lang="en">−40°C to +85°C operating range</span>
+                                <span class="text-gray-500 text-sm" data-lang="ko">−40°C ~ +85°C 동작 범위</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0"></span>
-                                <span class="text-gray-500 text-sm" data-lang="en">Wide operating temperature range</span>
-                                <span class="text-gray-500 text-sm" data-lang="ko">광범위한 동작 온도 범위</span>
+                                <span class="text-gray-500 text-sm" data-lang="en">Coin, cylindrical &amp; module form factors</span>
+                                <span class="text-gray-500 text-sm" data-lang="ko">코인, 원통형, 모듈 타입 제공</span>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- LTO Technology -->
+                    <!-- CHIPCELL LTO Technology -->
                     <div class="tech-card fade-up delay-200">
                         <div class="tech-icon bg-orange-50">
                             <svg class="w-7 h-7 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -372,45 +413,43 @@
                                          0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
                         </div>
-                        <p class="text-xs font-semibold text-orange-500 tracking-widest uppercase mb-2">CHIPCELL</p>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-lang="en">
-                            Lithium Titanate Oxide
-                        </h3>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-lang="ko">
-                            리튬 티타네이트 산화물
-                        </h3>
+                        <p class="text-xs font-semibold text-orange-500 tracking-widest uppercase mb-2">CHIPCELL LTO</p>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-lang="en">Lithium Titanate Oxide</h3>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-lang="ko">리튬 티타네이트 산화물 (LTO)</h3>
                         <p class="text-gray-500 leading-relaxed mb-8 font-light" data-lang="en">
-                            LTO replaces conventional graphite anodes with titanium oxide, creating a
-                            spinel crystal structure that enables ultra-fast ion transfer without lithium
-                            plating — the primary cause of thermal runaway in standard cells.
-                            CHIPCELL operates safely from −30°C to 60°C with zero fire risk.
+                            LTO replaces conventional graphite anodes with titanium oxide, forming a spinel
+                            crystal structure that enables 10C fast charging without lithium plating —
+                            the root cause of thermal runaway. CHIPCELL LTO covers the full range from
+                            ultra-small coin cells (CL Series) for IoT and RTC backup, to compact
+                            cylindrical cells (PS/PE Series) for portable devices, to high-capacity
+                            20Ah prismatic modules (LT20 Series) for industrial and grid applications.
                         </p>
                         <p class="text-gray-500 leading-relaxed mb-8 font-light" data-lang="ko">
-                            LTO는 기존 흑연 음극을 산화티타늄으로 대체하여 스피넬 결정 구조를 구현합니다.
-                            일반 전지의 열폭주 원인인 리튬 도금 없이 초고속 이온 전달이 가능합니다.
-                            CHIPCELL은 −30°C ~ 60°C에서 안전하게 작동하며 화재 위험이 없습니다.
+                            LTO는 기존 흑연 음극을 산화티타늄으로 대체해 스피넬 결정 구조를 형성합니다.
+                            열폭주의 근본 원인인 리튬 도금 없이 10C 급속 충전이 가능합니다.
+                            CHIPCELL LTO는 IoT·RTC 백업용 초소형 코인셀(CL)부터 휴대기기용 원통형 셀(PS/PE),
+                            산업·그리드용 20Ah 프리즈마틱 모듈(LT20)까지 완전한 라인업을 제공합니다.
                         </p>
-
                         <ul class="space-y-3">
                             <li class="flex items-center gap-3">
                                 <span class="w-1.5 h-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>
-                                <span class="text-gray-500 text-sm" data-lang="en">20,000+ cycle lifetime</span>
-                                <span class="text-gray-500 text-sm" data-lang="ko">20,000+ 사이클 수명</span>
+                                <span class="text-gray-500 text-sm" data-lang="en">5,000–20,000+ cycle lifetime</span>
+                                <span class="text-gray-500 text-sm" data-lang="ko">5,000~20,000+ 사이클 수명</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="w-1.5 h-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>
-                                <span class="text-gray-500 text-sm" data-lang="en">Zero fire risk — no thermal runaway</span>
-                                <span class="text-gray-500 text-sm" data-lang="ko">화재 위험 제로 — 열폭주 없음</span>
+                                <span class="text-gray-500 text-sm" data-lang="en">Zero fire &amp; explosion risk</span>
+                                <span class="text-gray-500 text-sm" data-lang="ko">화재·폭발 위험 제로</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="w-1.5 h-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>
-                                <span class="text-gray-500 text-sm" data-lang="en">−30°C to 60°C stable operation</span>
-                                <span class="text-gray-500 text-sm" data-lang="ko">−30°C ~ 60°C 안정 작동</span>
+                                <span class="text-gray-500 text-sm" data-lang="en">10C fast charge (5–10 min)</span>
+                                <span class="text-gray-500 text-sm" data-lang="ko">10C 급속 충전 (5~10분)</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="w-1.5 h-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>
-                                <span class="text-gray-500 text-sm" data-lang="en">Fast charge capability</span>
-                                <span class="text-gray-500 text-sm" data-lang="ko">급속 충전 가능</span>
+                                <span class="text-gray-500 text-sm" data-lang="en">−40°C to +70°C stable operation</span>
+                                <span class="text-gray-500 text-sm" data-lang="ko">−40°C ~ +70°C 안정 작동</span>
                             </li>
                         </ul>
                     </div>
@@ -437,32 +476,30 @@
                     <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="ko">
                         1990년부터의 신뢰
                     </h2>
-                    <p class="text-lg text-gray-400 max-w-3xl mx-auto font-light leading-relaxed"
-                       data-lang="en">
-                        Founded in Anseong, Korea, KORCHIP has spent over three decades advancing the
-                        science of energy storage. We design and manufacture supercapacitors and LTO
-                        batteries trusted by engineers in transportation, industrial equipment,
-                        renewable energy, and consumer electronics worldwide.
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto font-light leading-relaxed" data-lang="en">
+                        Founded in 1990 in Anyang-si, Korea, KORCHIP Corporation is a global manufacturer of
+                        EDLC supercapacitors and LTO batteries. With facilities in Korea, China, and Vietnam,
+                        our products are trusted by engineers in transportation, industrial automation, IoT,
+                        and renewable energy worldwide.
                     </p>
-                    <p class="text-lg text-gray-400 max-w-3xl mx-auto font-light leading-relaxed"
-                       data-lang="ko">
-                        경기도 안성에서 설립된 코칩은 30년 이상 에너지 저장 기술을 발전시켜 왔습니다.
-                        코칩의 슈퍼커패시터와 LTO 배터리는 교통, 산업 장비, 신재생에너지,
-                        가전 분야에서 전 세계 엔지니어들의 신뢰를 받고 있습니다.
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto font-light leading-relaxed" data-lang="ko">
+                        1990년 경기도 안양시에서 설립된 코칩은 EDLC 슈퍼커패시터와 LTO 배터리를 제조하는
+                        글로벌 기업입니다. 한국·중국·베트남에 생산 시설을 보유하며, 교통, 산업 자동화,
+                        IoT, 신재생에너지 분야에서 전 세계 엔지니어들의 신뢰를 받고 있습니다.
                     </p>
                 </div>
 
                 <!-- Stats grid -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-up delay-200">
                     <div class="stat-card">
-                        <div class="stat-number">30+</div>
+                        <div class="stat-number">35+</div>
                         <span class="stat-label" data-lang="en">Years Experience</span>
                         <span class="stat-label" data-lang="ko">년 경력</span>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">2</div>
-                        <span class="stat-label" data-lang="en">Product Lines</span>
-                        <span class="stat-label" data-lang="ko">제품 라인</span>
+                        <div class="stat-number">3</div>
+                        <span class="stat-label" data-lang="en">Global Facilities</span>
+                        <span class="stat-label" data-lang="ko">글로벌 생산 거점</span>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">1M+</div>
@@ -476,71 +513,66 @@
                     </div>
                 </div>
 
-                <!-- Applications -->
+                <!-- Application areas -->
                 <div class="mt-20 fade-up delay-300">
-                    <h3 class="text-xl font-semibold text-gray-900 text-center mb-10" data-lang="en">
-                        Application Areas
-                    </h3>
-                    <h3 class="text-xl font-semibold text-gray-900 text-center mb-10" data-lang="ko">
-                        적용 분야
-                    </h3>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <h3 class="text-xl font-semibold text-gray-900 text-center mb-10" data-lang="en">Application Areas</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 text-center mb-10" data-lang="ko">적용 분야</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
 
-                        <div class="flex flex-col items-center gap-3 p-6 rounded-xl bg-gray-50
-                                    border border-gray-100 text-center">
+                        <div class="flex flex-col items-center gap-3 p-5 rounded-xl bg-gray-50 border border-gray-100 text-center">
+                            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="en">Smart Infrastructure</span>
+                            <span class="text-xs text-gray-400" data-lang="en">Meters · Street Lights · Sensors</span>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">스마트 인프라</span>
+                            <span class="text-xs text-gray-400" data-lang="ko">계량기 · 가로등 · 센서</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-3 p-5 rounded-xl bg-gray-50 border border-gray-100 text-center">
+                            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="en">Industrial Automation</span>
+                            <span class="text-xs text-gray-400" data-lang="en">AGV · PLC · Factory</span>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">산업 자동화</span>
+                            <span class="text-xs text-gray-400" data-lang="ko">AGV · PLC · 공장자동화</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-3 p-5 rounded-xl bg-gray-50 border border-gray-100 text-center">
+                            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                      d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                            </svg>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="en">IoT &amp; Wireless</span>
+                            <span class="text-xs text-gray-400" data-lang="en">LPWAN · Trackers · Door Locks</span>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">IoT &amp; 무선기기</span>
+                            <span class="text-xs text-gray-400" data-lang="ko">LPWAN · 트래커 · 도어락</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-3 p-5 rounded-xl bg-gray-50 border border-gray-100 text-center">
                             <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                       d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
-                            <span class="text-sm text-gray-600 font-medium" data-lang="en">Regenerative Braking</span>
-                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">회생 제동</span>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="en">Mobility &amp; Transport</span>
+                            <span class="text-xs text-gray-400" data-lang="en">E-Bike · Forklift · Dashcam</span>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">모빌리티 &amp; 교통</span>
+                            <span class="text-xs text-gray-400" data-lang="ko">전동킥보드 · 지게차 · 블랙박스</span>
                         </div>
 
-                        <div class="flex flex-col items-center gap-3 p-6 rounded-xl bg-gray-50
-                                    border border-gray-100 text-center">
+                        <div class="flex flex-col items-center gap-3 p-5 rounded-xl bg-gray-50 border border-gray-100 text-center">
                             <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                      d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012
-                                         2v4M9 3v18m0 0h10a2 2 0 002-2V9M9
-                                         21H5a2 2 0 01-2-2V9m0 0h18"/>
+                                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
-                            <span class="text-sm text-gray-600 font-medium" data-lang="en">UPS &amp; Backup Power</span>
-                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">UPS &amp; 백업 전원</span>
-                        </div>
-
-                        <div class="flex flex-col items-center gap-3 p-6 rounded-xl bg-gray-50
-                                    border border-gray-100 text-center">
-                            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364
-                                         6.364l-.707-.707M6.343 6.343l-.707-.707m12.728
-                                         0l-.707.707M6.343 17.657l-.707.707M16
-                                         12a4 4 0 11-8 0 4 4 0 018 0z"/>
-                            </svg>
-                            <span class="text-sm text-gray-600 font-medium" data-lang="en">Renewable Energy</span>
-                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">신재생에너지</span>
-                        </div>
-
-                        <div class="flex flex-col items-center gap-3 p-6 rounded-xl bg-gray-50
-                                    border border-gray-100 text-center">
-                            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                      d="M10.325 4.317c.426-1.756 2.924-1.756
-                                         3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94
-                                         3.31.826 2.37 2.37a1.724 1.724 0
-                                         001.065 2.572c1.756.426 1.756 2.924 0
-                                         3.35a1.724 1.724 0 00-1.066 2.573c.94
-                                         1.543-.826 3.31-2.37 2.37a1.724 1.724 0
-                                         00-2.572 1.065c-.426 1.756-2.924 1.756-3.35
-                                         0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724
-                                         1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924
-                                         0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31
-                                         2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                            <span class="text-sm text-gray-600 font-medium" data-lang="en">Industrial Equipment</span>
-                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">산업 장비</span>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="en">Extreme Environments</span>
+                            <span class="text-xs text-gray-400" data-lang="en">Cold Storage · Military · Arctic</span>
+                            <span class="text-sm text-gray-600 font-medium" data-lang="ko">극한 환경</span>
+                            <span class="text-xs text-gray-400" data-lang="ko">냉동창고 · 군용 · 극지</span>
                         </div>
                     </div>
                 </div>
@@ -560,12 +592,8 @@
                 <div class="text-center mb-20 fade-up">
                     <span class="section-label" data-lang="en">Contact</span>
                     <span class="section-label" data-lang="ko">문의</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="en">
-                        Get In Touch
-                    </h2>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="ko">
-                        문의하기
-                    </h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="en">Get In Touch</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6" data-lang="ko">문의하기</h2>
                     <p class="text-lg text-gray-400 max-w-xl mx-auto font-light" data-lang="en">
                         Interested in our products or need a custom energy storage solution?
                         We're happy to help.
@@ -589,7 +617,7 @@
                         </div>
                         <h3 class="font-semibold text-gray-900 mb-1" data-lang="en">Email</h3>
                         <h3 class="font-semibold text-gray-900 mb-1" data-lang="ko">이메일</h3>
-                        <p class="text-gray-400 text-sm">info@korchip.com</p>
+                        <p class="text-gray-400 text-sm">chipcell@korchip.com</p>
                     </div>
 
                     <!-- Phone -->
@@ -626,15 +654,14 @@
                         <h3 class="font-semibold text-gray-900 mb-1" data-lang="en">Location</h3>
                         <h3 class="font-semibold text-gray-900 mb-1" data-lang="ko">위치</h3>
                         <p class="text-gray-400 text-sm" data-lang="en">
-                            Anseong-si, Gyeonggi-do<br>Republic of Korea
+                            Anyang-si, Gyeonggi-do<br>Republic of Korea
                         </p>
                         <p class="text-gray-400 text-sm" data-lang="ko">
-                            경기도 안성시<br>대한민국
+                            경기도 안양시<br>대한민국
                         </p>
                     </div>
                 </div>
 
-                <!-- Business hours note -->
                 <p class="text-center text-sm text-gray-300 mt-10 fade-up delay-200" data-lang="en">
                     Business hours: Mon – Fri, 09:00 – 18:00 KST
                 </p>
@@ -663,7 +690,7 @@
                 <a href="#contact"    class="hover:text-gray-300 transition-colors" data-page-nav="contact"    data-lang="en">Contact</a>
                 <a href="#contact"    class="hover:text-gray-300 transition-colors" data-page-nav="contact"    data-lang="ko">문의</a>
             </nav>
-            <div class="text-sm text-gray-600">© 2024 KORCHIP Inc. All rights reserved.</div>
+            <div class="text-sm text-gray-600">© 2025 KORCHIP Corporation. All rights reserved.</div>
         </div>
     </footer>
 
