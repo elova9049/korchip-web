@@ -27,7 +27,26 @@
                 <button class="lang-btn"        onclick="switchLang('ko')">KO</button>
             </div>
         </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
+
+    <!-- ── Mobile Menu Drawer ───────────────────────────── -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation">
+        <a href="#products" class="mobile-nav-link" data-page-nav="products" data-lang="en">Products</a>
+        <a href="#products" class="mobile-nav-link" data-page-nav="products" data-lang="ko">제품</a>
+        <a href="#company"  class="mobile-nav-link" data-page-nav="company"  data-lang="en">About</a>
+        <a href="#company"  class="mobile-nav-link" data-page-nav="company"  data-lang="ko">회사소개</a>
+        <a href="#contact"  class="mobile-nav-link" data-page-nav="contact"  data-lang="en">Contact</a>
+        <a href="#contact"  class="mobile-nav-link" data-page-nav="contact"  data-lang="ko">문의</a>
+        <div class="mobile-lang-row">
+            <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+            <button class="lang-btn"        onclick="switchLang('ko')">KO</button>
+        </div>
+    </div>
 
     <!-- ══════════════════════════════════════════════════════ -->
     <!-- PAGE: Home                                            -->
@@ -574,9 +593,7 @@
                     </p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-6 fade-up delay-100">
-
-                    <!-- Email -->
+                <div class="fade-up delay-100 max-w-xl mx-auto">
                     <div class="contact-card">
                         <div class="contact-icon">
                             <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -588,48 +605,7 @@
                         </div>
                         <h3 class="font-semibold text-gray-900 mb-1" data-lang="en">Email</h3>
                         <h3 class="font-semibold text-gray-900 mb-1" data-lang="ko">이메일</h3>
-                        <p class="text-gray-400 text-sm">chipcell@korchip.com</p>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                      d="M3 5a2 2 0 012-2h3.28a1 1 0
-                                         01.948.684l1.498 4.493a1 1 0
-                                         01-.502 1.21l-2.257 1.13a11.042
-                                         11.042 0 005.516 5.516l1.13-2.257a1
-                                         1 0 011.21-.502l4.493 1.498a1 1 0
-                                         01.684.948V19a2 2 0 01-2 2h-1C9.716
-                                         21 3 14.284 3 6V5z"/>
-                            </svg>
-                        </div>
-                        <h3 class="font-semibold text-gray-900 mb-1" data-lang="en">Phone</h3>
-                        <h3 class="font-semibold text-gray-900 mb-1" data-lang="ko">전화</h3>
-                        <p class="text-gray-400 text-sm">+82-31-000-0000</p>
-                    </div>
-
-                    <!-- Location -->
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                      d="M17.657 16.657L13.414 20.9a1.998
-                                         1.998 0 01-2.827 0l-4.244-4.243a8
-                                         8 0 1111.314 0z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="font-semibold text-gray-900 mb-1" data-lang="en">Location</h3>
-                        <h3 class="font-semibold text-gray-900 mb-1" data-lang="ko">위치</h3>
-                        <p class="text-gray-400 text-sm" data-lang="en">
-                            Anyang-si, Gyeonggi-do<br>Republic of Korea
-                        </p>
-                        <p class="text-gray-400 text-sm" data-lang="ko">
-                            경기도 안양시<br>대한민국
-                        </p>
+                        <a href="mailto:chipcell@korchip.com" class="text-gray-400 text-sm hover-red">chipcell@korchip.com</a>
                     </div>
                 </div>
 

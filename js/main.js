@@ -79,6 +79,26 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// ── Mobile Menu ─────────────────────────────────────────
+
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu    = document.getElementById('mobileMenu');
+
+mobileMenuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    mobileMenuBtn.classList.toggle('open', isOpen);
+    mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+});
+
+// Close when a nav link inside the drawer is tapped
+mobileMenu.addEventListener('click', e => {
+    if (e.target.closest('[data-page-nav]')) {
+        mobileMenu.classList.remove('open');
+        mobileMenuBtn.classList.remove('open');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    }
+});
+
 // ── Initial Page Load ──────────────────────────────────
 
 const initialPage = location.hash.replace('#', '') || 'home';
