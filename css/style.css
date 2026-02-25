@@ -291,6 +291,13 @@ html {
 .korchip-red   { color: #E31837; }
 .bg-korchip-red { background-color: #E31837; }
 
+/* ── Page Visibility ──────────────────────────────── */
+
+.page { display: none; }
+.page.active { display: block; }
+
+.nav-link.page-active { color: #E31837; }
+
 /* ── Bilingual Visibility ─────────────────────────── */
 /* Keep at the bottom so these rules win over any display: block above */
 

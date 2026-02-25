@@ -1,3 +1,47 @@
+// ── Page Navigation ────────────────────────────────────
+
+function showPage(pageId) {
+    // Hide all pages and reset their animations
+    document.querySelectorAll('.page').forEach(p => {
+        p.classList.remove('active');
+        p.querySelectorAll('.fade-up').forEach(el => el.classList.remove('visible'));
+    });
+
+    const page = document.getElementById('page-' + pageId);
+    if (!page) return;
+
+    page.classList.add('active');
+    window.scrollTo(0, 0);
+
+    // Trigger staggered fade-up animations for the new page
+    setTimeout(() => {
+        page.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+    }, 50);
+
+    // Update active nav link highlight
+    document.querySelectorAll('.nav-link').forEach(a => {
+        a.classList.toggle('page-active', a.dataset.pageNav === pageId);
+    });
+}
+
+// Intercept all [data-page-nav] link clicks
+document.addEventListener('click', e => {
+    const link = e.target.closest('[data-page-nav]');
+    if (!link) return;
+    e.preventDefault();
+    const pageId = link.dataset.pageNav;
+    history.pushState(null, '', pageId === 'home' ? '#' : '#' + pageId);
+    showPage(pageId);
+});
+
+// Browser back / forward button support
+window.addEventListener('popstate', () => {
+    const hash = location.hash.replace('#', '') || 'home';
+    showPage(hash);
+});
+
+// ── Language Switching ─────────────────────────────────
+
 function switchLang(lang) {
     if (lang === 'ko') {
         document.body.classList.add('korean');
@@ -15,25 +59,16 @@ function switchLang(lang) {
 }
 
 const savedLang = localStorage.getItem('korchip-lang');
-if (savedLang === 'ko') {
-    switchLang('ko');
-}
+if (savedLang === 'ko') switchLang('ko');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+// ── Navbar Scroll Effect ───────────────────────────────
 
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
-        navbar.classList.add('nav-scrolled');
-    } else {
-        navbar.classList.remove('nav-scrolled');
-    }
+    navbar.classList.toggle('nav-scrolled', window.pageYOffset > 100);
 });
+
+// ── Initial Page Load ──────────────────────────────────
+
+const initialPage = location.hash.replace('#', '') || 'home';
+showPage(initialPage);
