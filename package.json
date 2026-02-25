@@ -1,7 +1,0 @@
-{
-  "name": "korchip-assistant-api",
-  "version": "1.0.0",
-  "dependencies": {
-    "openai": "^4.0.0"
-  }
-}
