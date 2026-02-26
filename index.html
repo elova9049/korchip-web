@@ -18,6 +18,8 @@
         <div class="nav-links flex items-center">
             <a href="#products"   class="nav-link" data-page-nav="products"   data-lang="en">Products</a>
             <a href="#products"   class="nav-link" data-page-nav="products"   data-lang="ko">제품</a>
+            <a href="#news"       class="nav-link" data-page-nav="news"       data-lang="en">News</a>
+            <a href="#news"       class="nav-link" data-page-nav="news"       data-lang="ko">뉴스</a>
             <a href="#company"    class="nav-link" data-page-nav="company"    data-lang="en">About</a>
             <a href="#company"    class="nav-link" data-page-nav="company"    data-lang="ko">회사소개</a>
             <a href="#contact"    class="nav-link" data-page-nav="contact"    data-lang="en">Contact</a>
@@ -38,6 +40,8 @@
     <div class="mobile-menu" id="mobileMenu" role="navigation">
         <a href="#products" class="mobile-nav-link" data-page-nav="products" data-lang="en">Products</a>
         <a href="#products" class="mobile-nav-link" data-page-nav="products" data-lang="ko">제품</a>
+        <a href="#news"     class="mobile-nav-link" data-page-nav="news"     data-lang="en">News</a>
+        <a href="#news"     class="mobile-nav-link" data-page-nav="news"     data-lang="ko">뉴스</a>
         <a href="#company"  class="mobile-nav-link" data-page-nav="company"  data-lang="en">About</a>
         <a href="#company"  class="mobile-nav-link" data-page-nav="company"  data-lang="ko">회사소개</a>
         <a href="#contact"  class="mobile-nav-link" data-page-nav="contact"  data-lang="en">Contact</a>
@@ -88,6 +92,66 @@
                     <a href="#contact"  class="btn-outline" data-page-nav="contact"  data-lang="ko">문의하기</a>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- ── Latest News Preview ──────────────────────────────── -->
+        <section class="py-24 bg-gray-50 relative">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+                <div class="flex justify-between items-end mb-12 fade-up">
+                    <div>
+                        <span class="section-label" data-lang="en">Latest News</span>
+                        <span class="section-label" data-lang="ko">최신 뉴스</span>
+                        <h2 class="text-2xl font-bold text-gray-900" data-lang="en">What's New</h2>
+                        <h2 class="text-2xl font-bold text-gray-900" data-lang="ko">새로운 소식</h2>
+                    </div>
+                    <a href="#news" class="btn-outline" data-page-nav="news" data-lang="en" style="padding:10px 24px;font-size:14px">View All</a>
+                    <a href="#news" class="btn-outline" data-page-nav="news" data-lang="ko" style="padding:10px 24px;font-size:14px">전체보기</a>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+
+                    <!-- NEWS ITEM 1 — 최신순, 위에 추가 -->
+                    <a href="#news" class="news-card-home fade-up" data-page-nav="news">
+                        <div class="news-card-meta">
+                            <span class="news-tag-pill" data-lang="en">Product</span>
+                            <span class="news-tag-pill" data-lang="ko">제품</span>
+                            <time class="news-date-home">Feb 2026</time>
+                        </div>
+                        <h3 class="news-card-title" data-lang="en">LT20 Series Achieves 20,000+ Cycle Validation</h3>
+                        <h3 class="news-card-title" data-lang="ko">LT20 시리즈, 20,000+ 사이클 검증 완료</h3>
+                        <p class="news-card-excerpt" data-lang="en">Independent third-party testing confirms our flagship LTO battery sustains over 20,000 full cycles at 10C rate.</p>
+                        <p class="news-card-excerpt" data-lang="ko">당사 플래그십 LTO 배터리의 20,000+ 사이클 수명이 공인 기관 시험을 통해 공식 확인되었습니다.</p>
+                    </a>
+
+                    <!-- NEWS ITEM 2 -->
+                    <a href="#news" class="news-card-home fade-up delay-100" data-page-nav="news">
+                        <div class="news-card-meta">
+                            <span class="news-tag-pill" data-lang="en">Company</span>
+                            <span class="news-tag-pill" data-lang="ko">회사</span>
+                            <time class="news-date-home">Jan 2026</time>
+                        </div>
+                        <h3 class="news-card-title" data-lang="en">KORCHIP Confirms Singapore Regional Hub</h3>
+                        <h3 class="news-card-title" data-lang="ko">코칩, 싱가포르 아시아 거점 확장 발표</h3>
+                        <p class="news-card-excerpt" data-lang="en">A new Singapore office strengthens distribution and technical support across Southeast Asia, opening Q2 2026.</p>
+                        <p class="news-card-excerpt" data-lang="ko">싱가포르 신규 사무소를 통해 동남아시아 유통망 및 기술지원이 강화됩니다. 2026년 2분기 운영 개시 예정.</p>
+                    </a>
+
+                    <!-- NEWS ITEM 3 -->
+                    <a href="#news" class="news-card-home fade-up delay-200" data-page-nav="news">
+                        <div class="news-card-meta">
+                            <span class="news-tag-pill" data-lang="en">Product</span>
+                            <span class="news-tag-pill" data-lang="ko">제품</span>
+                            <time class="news-date-home">Dec 2025</time>
+                        </div>
+                        <h3 class="news-card-title" data-lang="en">New EDLC Module Series for EV Regenerative Braking</h3>
+                        <h3 class="news-card-title" data-lang="ko">신규 EDLC 모듈 시리즈, 전기차 회생제동 공략</h3>
+                        <p class="news-card-excerpt" data-lang="en">Expanded HPML lineup offers up to 7.5F at 5.5V with compact form factor and extended −40°C performance.</p>
+                        <p class="news-card-excerpt" data-lang="ko">HPML 확장 라인업, 소형 폼팩터에서 5.5V 최대 7.5F 제공 및 −40°C 저온 성능 강화.</p>
+                    </a>
+
+                </div>
             </div>
         </section>
 
@@ -449,6 +513,79 @@
     </div><!-- /page-products -->
 
     <!-- ══════════════════════════════════════════════════════ -->
+    <!-- PAGE: News                                            -->
+    <!-- ══════════════════════════════════════════════════════ -->
+    <div id="page-news" class="page">
+
+        <section class="py-24 md:py-32 bg-white relative" id="news">
+            <div class="max-w-3xl mx-auto px-6 md:px-12">
+
+                <div class="text-center mb-20 fade-up">
+                    <span class="section-label" data-lang="en">News</span>
+                    <span class="section-label" data-lang="ko">뉴스</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900" data-lang="en">Latest Updates</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900" data-lang="ko">최신 소식</h2>
+                </div>
+
+                <!-- ═══ 뉴스 추가 시 아래에 article 블록을 복사해서 위에 붙여넣으세요 ═══ -->
+
+                <!-- NEWS ARTICLE 1 — 최신 -->
+                <article class="news-article fade-up">
+                    <div class="news-meta">
+                        <span class="news-category" data-lang="en">Product</span>
+                        <span class="news-category" data-lang="ko">제품</span>
+                        <time class="news-date">Feb 2026</time>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4" data-lang="en">LT20 Series Achieves 20,000+ Cycle Validation</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4" data-lang="ko">LT20 시리즈, 20,000+ 사이클 검증 완료</h3>
+                    <p class="text-gray-500 leading-relaxed font-light" data-lang="en">
+                        Independent third-party testing has officially confirmed that KORCHIP's LT20 Series LTO battery sustains over 20,000 full charge-discharge cycles at 10C rate, setting a new benchmark for industrial energy storage reliability. The 20Ah prismatic format is now available for qualification sampling — contact us for details.
+                    </p>
+                    <p class="text-gray-500 leading-relaxed font-light" data-lang="ko">
+                        당사 LT20 시리즈 LTO 배터리가 10C 환경에서 20,000회 이상 완전 충방전 사이클을 유지한다는 사실이 제3자 공인 기관 시험을 통해 공식 확인되었습니다. 산업용 에너지 저장 신뢰성의 새로운 기준을 제시합니다. 20Ah 프리즈마틱 타입 샘플 신청이 가능합니다.
+                    </p>
+                </article>
+
+                <!-- NEWS ARTICLE 2 -->
+                <article class="news-article fade-up delay-100">
+                    <div class="news-meta">
+                        <span class="news-category" data-lang="en">Company</span>
+                        <span class="news-category" data-lang="ko">회사</span>
+                        <time class="news-date">Jan 2026</time>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4" data-lang="en">KORCHIP Confirms Singapore Regional Hub Expansion</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4" data-lang="ko">코칩, 싱가포르 아시아 거점 확장 공식 발표</h3>
+                    <p class="text-gray-500 leading-relaxed font-light" data-lang="en">
+                        KORCHIP has announced the establishment of its Singapore regional hub, strengthening distribution and technical support across Southeast Asia. The office will provide faster lead times and localized engineering consultation for customers in Singapore, Malaysia, Thailand, Vietnam, and Indonesia. Operations are expected to begin in Q2 2026.
+                    </p>
+                    <p class="text-gray-500 leading-relaxed font-light" data-lang="ko">
+                        코칩이 싱가포르 아시아 지역 거점 설립을 공식 발표했습니다. 동남아시아 전반의 유통 및 기술 지원이 강화되며, 싱가포르·말레이시아·태국·베트남·인도네시아 고객에게 빠른 납기와 현지 엔지니어링 컨설팅을 제공합니다. 2026년 2분기 운영 개시 예정입니다.
+                    </p>
+                </article>
+
+                <!-- NEWS ARTICLE 3 -->
+                <article class="news-article fade-up delay-200">
+                    <div class="news-meta">
+                        <span class="news-category" data-lang="en">Product</span>
+                        <span class="news-category" data-lang="ko">제품</span>
+                        <time class="news-date">Dec 2025</time>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4" data-lang="en">New EDLC Module Series Targets EV Regenerative Braking</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4" data-lang="ko">신규 EDLC 모듈 시리즈, 전기차 회생제동 시장 공략</h3>
+                    <p class="text-gray-500 leading-relaxed font-light" data-lang="en">
+                        KORCHIP has launched an expanded HPML module lineup optimized for regenerative braking in electric vehicles and hybrid systems. The new series offers up to 7.5F at 5.5V in a compact form factor with proven performance down to −40°C, making it ideal for cold-climate EV and light-rail deployments. Contact us for datasheet and pricing.
+                    </p>
+                    <p class="text-gray-500 leading-relaxed font-light" data-lang="ko">
+                        코칩이 전기차 및 하이브리드 회생제동에 최적화된 HPML 모듈 라인업을 출시했습니다. 소형 폼팩터에서 5.5V 최대 7.5F를 제공하며 −40°C까지 검증된 성능으로 한랭지 전기차·경전철 구축에 최적화되어 있습니다. 데이터시트 및 가격은 문의해 주세요.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </div><!-- /page-news -->
+
+    <!-- ══════════════════════════════════════════════════════ -->
     <!-- PAGE: Company (About)                                 -->
     <!-- ══════════════════════════════════════════════════════ -->
     <div id="page-company" class="page">
@@ -630,6 +767,8 @@
             <nav class="flex gap-6 text-sm text-gray-500">
                 <a href="#products"   class="hover:text-gray-300 transition-colors" data-page-nav="products"   data-lang="en">Products</a>
                 <a href="#products"   class="hover:text-gray-300 transition-colors" data-page-nav="products"   data-lang="ko">제품</a>
+                <a href="#news"       class="hover:text-gray-300 transition-colors" data-page-nav="news"       data-lang="en">News</a>
+                <a href="#news"       class="hover:text-gray-300 transition-colors" data-page-nav="news"       data-lang="ko">뉴스</a>
                 <a href="#company"    class="hover:text-gray-300 transition-colors" data-page-nav="company"    data-lang="en">About</a>
                 <a href="#company"    class="hover:text-gray-300 transition-colors" data-page-nav="company"    data-lang="ko">회사소개</a>
                 <a href="#contact"    class="hover:text-gray-300 transition-colors" data-page-nav="contact"    data-lang="en">Contact</a>
