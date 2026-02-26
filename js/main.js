@@ -71,13 +71,18 @@ if (savedLang === 'ko') switchLang('ko');
 // ── Navbar Scroll Effect ───────────────────────────────
 
 const navbar = document.getElementById('navbar');
+let scrollRafId = null;
 window.addEventListener('scroll', () => {
-    // Only apply scroll-based nav style on the home page
-    const isHome = document.getElementById('page-home').classList.contains('active');
-    if (isHome) {
-        navbar.classList.toggle('nav-scrolled', window.pageYOffset > 100);
-    }
-});
+    if (scrollRafId) return;
+    scrollRafId = requestAnimationFrame(() => {
+        scrollRafId = null;
+        // Only apply scroll-based nav style on the home page
+        const isHome = document.getElementById('page-home').classList.contains('active');
+        if (isHome) {
+            navbar.classList.toggle('nav-scrolled', window.pageYOffset > 100);
+        }
+    });
+}, { passive: true });
 
 // ── Product Lineup Filter ────────────────────────────────
 
