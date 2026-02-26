@@ -626,6 +626,7 @@ body.korean [data-lang="ko"] { display: block; }
     border-bottom: 1px solid #f3f4f6;
     color: #374151;
     vertical-align: middle;
+    white-space: nowrap;
 }
 
 .lineup-row:last-child td { border-bottom: none; }
