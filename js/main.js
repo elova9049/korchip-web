@@ -79,6 +79,34 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// ── Product Lineup Filter ────────────────────────────────
+
+(function () {
+    const activeFilters = { type: 'all', form: 'all' };
+
+    function applyFilters() {
+        let visibleCount = 0;
+        document.querySelectorAll('.lineup-row').forEach(row => {
+            const ok = (activeFilters.type === 'all' || row.dataset.type === activeFilters.type) &&
+                       (activeFilters.form === 'all' || row.dataset.form === activeFilters.form);
+            row.style.display = ok ? '' : 'none';
+            if (ok) visibleCount++;
+        });
+        const emptyEl = document.getElementById('lineupEmpty');
+        if (emptyEl) emptyEl.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    document.addEventListener('click', e => {
+        const pill = e.target.closest('.filter-pill');
+        if (!pill) return;
+        const group = pill.dataset.filter;
+        document.querySelectorAll(`.filter-pill[data-filter="${group}"]`).forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        activeFilters[group] = pill.dataset.value;
+        applyFilters();
+    });
+}());
+
 // ── Mobile Menu ─────────────────────────────────────────
 
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');

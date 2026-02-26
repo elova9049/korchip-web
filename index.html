@@ -264,6 +264,226 @@
             </div>
         </section>
 
+        <!-- ── Product Lineup ─────────────────────────────────────── -->
+
+        <section class="py-24 md:py-32 bg-gray-50 relative" id="lineup">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+                <div class="text-center mb-16 fade-up">
+                    <span class="section-label" data-lang="en">Product Lineup</span>
+                    <span class="section-label" data-lang="ko">제품 라인업</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4" data-lang="en">Full Product Catalog</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4" data-lang="ko">전체 제품 카탈로그</h2>
+                    <p class="text-gray-400 font-light" data-lang="en">Filter by product line or form factor to find the right series.</p>
+                    <p class="text-gray-400 font-light" data-lang="ko">제품 라인 또는 폼팩터로 필터링하여 원하는 시리즈를 찾으세요.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="lineup-filters fade-up">
+                    <div class="filter-row">
+                        <span class="filter-label" data-lang="en">Product Line</span>
+                        <span class="filter-label" data-lang="ko">제품 라인</span>
+                        <div class="filter-pills">
+                            <button class="filter-pill active" data-filter="type" data-value="all"><span data-lang="en">All</span><span data-lang="ko">전체</span></button>
+                            <button class="filter-pill" data-filter="type" data-value="carbon">CHIPCELL CARBON</button>
+                            <button class="filter-pill" data-filter="type" data-value="lto">CHIPCELL LTO</button>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <span class="filter-label" data-lang="en">Form Factor</span>
+                        <span class="filter-label" data-lang="ko">폼팩터</span>
+                        <div class="filter-pills">
+                            <button class="filter-pill active" data-filter="form" data-value="all"><span data-lang="en">All</span><span data-lang="ko">전체</span></button>
+                            <button class="filter-pill" data-filter="form" data-value="coin"><span data-lang="en">Coin</span><span data-lang="ko">코인</span></button>
+                            <button class="filter-pill" data-filter="form" data-value="cylindrical"><span data-lang="en">Cylindrical</span><span data-lang="ko">원통형</span></button>
+                            <button class="filter-pill" data-filter="form" data-value="module"><span data-lang="en">Module</span><span data-lang="ko">모듈</span></button>
+                            <button class="filter-pill" data-filter="form" data-value="smd">SMD</button>
+                            <button class="filter-pill" data-filter="form" data-value="prismatic"><span data-lang="en">Prismatic</span><span data-lang="ko">프리즈마틱</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="lineup-table-wrap fade-up delay-100">
+                    <table class="lineup-table">
+                        <thead>
+                            <tr>
+                                <th><span data-lang="en">Series</span><span data-lang="ko">시리즈</span></th>
+                                <th><span data-lang="en">Product Line</span><span data-lang="ko">제품 라인</span></th>
+                                <th><span data-lang="en">Form Factor</span><span data-lang="ko">폼팩터</span></th>
+                                <th><span data-lang="en">Capacitance / Capacity</span><span data-lang="ko">정전용량 / 용량</span></th>
+                                <th><span data-lang="en">Voltage</span><span data-lang="ko">전압</span></th>
+                                <th><span data-lang="en">Temperature</span><span data-lang="ko">동작 온도</span></th>
+                                <th><span data-lang="en">Application</span><span data-lang="ko">응용분야</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <!-- ── CHIPCELL CARBON ── -->
+                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                                <td><span class="lineup-series">DCL</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Coin</span><span class="lineup-form" data-lang="ko">코인</span></td>
+                                <td>0.47 – 1.5 F</td>
+                                <td>5.5 V</td>
+                                <td>−40 ~ +85°C</td>
+                                <td class="lineup-app"><span data-lang="en">Meters · UPS · IoT</span><span data-lang="ko">계량기 · UPS · IoT</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                                <td><span class="lineup-series">DCLT</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Coin · High Temp</span><span class="lineup-form" data-lang="ko">코인 · 고온</span></td>
+                                <td>0.47 – 1.5 F</td>
+                                <td>5.5 V</td>
+                                <td>−40 ~ +85°C</td>
+                                <td class="lineup-app"><span data-lang="en">Automotive · High-temp systems</span><span data-lang="ko">차량용 · 고온 환경</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                                <td><span class="lineup-series">DCS</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Coin</span><span class="lineup-form" data-lang="ko">코인</span></td>
+                                <td>0.047 – 0.47 F</td>
+                                <td>5.5 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">RTC backup · Sensors</span><span data-lang="ko">RTC 백업 · 센서</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                                <td><span class="lineup-series">DCST</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Coin · High Temp</span><span class="lineup-form" data-lang="ko">코인 · 고온</span></td>
+                                <td>0.047 – 0.47 F</td>
+                                <td>5.5 V</td>
+                                <td>−40 ~ +85°C</td>
+                                <td class="lineup-app"><span data-lang="en">Automotive sensors</span><span data-lang="ko">차량용 센서</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="smd">
+                                <td><span class="lineup-series">SM</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form">SMD</span></td>
+                                <td>0.033 – 0.07 F</td>
+                                <td>2.5 / 3.3 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">PCB mount · IoT modules</span><span data-lang="ko">PCB 실장 · IoT 모듈</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="cylindrical">
+                                <td><span class="lineup-series">DR</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Cylindrical</span><span class="lineup-form" data-lang="ko">원통형</span></td>
+                                <td>1 – 10 F</td>
+                                <td>2.7 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">UPS · Industrial equipment</span><span data-lang="ko">UPS · 산업 장비</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="cylindrical">
+                                <td><span class="lineup-series">DL</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Cylindrical · Large</span><span class="lineup-form" data-lang="ko">원통형 · 대용량</span></td>
+                                <td>10 – 350 F</td>
+                                <td>2.7 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">Regenerative braking · Energy storage</span><span data-lang="ko">회생제동 · 에너지 저장</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="cylindrical">
+                                <td><span class="lineup-series">HP</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Cylindrical · High Power</span><span class="lineup-form" data-lang="ko">원통형 · 고출력</span></td>
+                                <td>10 – 350 F</td>
+                                <td>2.7 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">Peak power · Hybrid systems</span><span data-lang="ko">피크 전력 · 하이브리드</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="module">
+                                <td><span class="lineup-series">DRML</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Module</span><span class="lineup-form" data-lang="ko">모듈</span></td>
+                                <td>0.33 – 1.5 F</td>
+                                <td>5.5 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">Smart meters · Connected devices</span><span data-lang="ko">스마트 계량기 · 연결 기기</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="module">
+                                <td><span class="lineup-series">DRMH</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Module · High Voltage</span><span class="lineup-form" data-lang="ko">모듈 · 고전압</span></td>
+                                <td>0.5 – 3.3 F</td>
+                                <td>up to 15 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">High-voltage applications</span><span data-lang="ko">고전압 응용</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="carbon" data-form="module">
+                                <td><span class="lineup-series">HPML</span></td>
+                                <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
+                                <td><span class="lineup-form" data-lang="en">Module · High Power</span><span class="lineup-form" data-lang="ko">모듈 · 고출력</span></td>
+                                <td>0.33 – 7.5 F</td>
+                                <td>5.5 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">EV braking · Industrial cranes</span><span data-lang="ko">전기차 회생제동 · 크레인</span></td>
+                            </tr>
+
+                            <!-- ── CHIPCELL LTO ── -->
+                            <tr class="lineup-row" data-type="lto" data-form="coin">
+                                <td><span class="lineup-series">CL Series</span></td>
+                                <td><span class="lineup-badge lineup-badge-lto">CHIPCELL LTO</span></td>
+                                <td><span class="lineup-form" data-lang="en">Coin</span><span class="lineup-form" data-lang="ko">코인</span></td>
+                                <td>0.4 – 1.8 mAh</td>
+                                <td>2.4 V</td>
+                                <td>−20 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">RTC · IoT backup · Wearables</span><span data-lang="ko">RTC · IoT 백업 · 웨어러블</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="lto" data-form="cylindrical">
+                                <td><span class="lineup-series">PS Series</span></td>
+                                <td><span class="lineup-badge lineup-badge-lto">CHIPCELL LTO</span></td>
+                                <td><span class="lineup-form" data-lang="en">Cylindrical</span><span class="lineup-form" data-lang="ko">원통형</span></td>
+                                <td>40 – 100 mAh</td>
+                                <td>2.4 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">Portable devices · 10C fast charge</span><span data-lang="ko">휴대 기기 · 10C 급속충전</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="lto" data-form="cylindrical">
+                                <td><span class="lineup-series">PE Series</span></td>
+                                <td><span class="lineup-badge lineup-badge-lto">CHIPCELL LTO</span></td>
+                                <td><span class="lineup-form" data-lang="en">Cylindrical</span><span class="lineup-form" data-lang="ko">원통형</span></td>
+                                <td>12 – 30 mAh</td>
+                                <td>2.4 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">Portable · Industrial sensors</span><span data-lang="ko">휴대용 · 산업 센서</span></td>
+                            </tr>
+
+                            <tr class="lineup-row" data-type="lto" data-form="prismatic">
+                                <td><span class="lineup-series">LT20 Series</span></td>
+                                <td><span class="lineup-badge lineup-badge-lto">CHIPCELL LTO</span></td>
+                                <td><span class="lineup-form" data-lang="en">Prismatic</span><span class="lineup-form" data-lang="ko">프리즈마틱</span></td>
+                                <td>20 Ah</td>
+                                <td>2.4 V</td>
+                                <td>−40 ~ +70°C</td>
+                                <td class="lineup-app"><span data-lang="en">Industrial · Grid · Light rail · EV</span><span data-lang="ko">산업용 · 그리드 · 경전철 · EV</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Empty state -->
+                <div class="lineup-empty" id="lineupEmpty" style="display:none">
+                    <p data-lang="en">No products match the selected filters.</p>
+                    <p data-lang="ko">선택한 필터에 해당하는 제품이 없습니다.</p>
+                </div>
+
+            </div>
+        </section>
+
         <!-- ── Specs ─────────────────────────────────────────────── -->
 
         <section class="bg-white py-24 md:py-32 relative" id="specs">
