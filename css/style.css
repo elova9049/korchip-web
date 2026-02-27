@@ -190,18 +190,59 @@ html {
     transform: translateY(-2px);
 }
 
-/* ── Spec Numbers ─────────────────────────────────── */
+/* ── Spec Cards ───────────────────────────────────── */
 
-.spec-item {
-    padding-left: 24px;
-    margin-bottom: 32px;
+.spec-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 32px;
 }
 
-.spec-number {
-    font-size: 52px;
+.spec-kv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 32px;
+}
+
+.spec-kv-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #9ca3af;
+    margin-bottom: 3px;
+}
+
+.spec-kv-value {
+    font-size: 20px;
     font-weight: 700;
+    color: #111827;
+    letter-spacing: -0.02em;
     line-height: 1;
-    margin-bottom: 8px;
+}
+
+.spec-series-row {
+    display: flex;
+    justify-content: space-between;
+    color: #9ca3af;
+}
+
+.spec-series-name {
+    font-weight: 600;
+    color: #374151;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.cert-tag {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b7280;
+    padding: 4px 12px;
+    border: 1px solid #f3f4f6;
+    border-radius: 6px;
+    background: #fafafa;
 }
 
 /* ── Technology Cards ─────────────────────────────── */
@@ -882,7 +923,7 @@ body.korean [data-lang="ko"] { display: block; }
     .nav-links { display: none; }
     .mobile-menu-btn { display: flex; }
     .nav-fixed { padding: 16px 20px; }
-    .spec-number { font-size: 38px; }
+    .spec-kv-value { font-size: 17px; }
     .stat-number { font-size: 36px; }
     .product-card,
     .tech-card { padding: 28px; }
