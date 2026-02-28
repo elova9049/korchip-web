@@ -63,9 +63,9 @@ html {
 }
 
 .home-title {
-    font-size: clamp(64px, 11vw, 128px);
+    font-size: clamp(36px, 4.5vw, 52px);
     font-weight: 700;
-    letter-spacing: -0.035em;
+    letter-spacing: 0.12em;
     color: #0a0a0a;
     line-height: 1;
     margin-bottom: 28px;
