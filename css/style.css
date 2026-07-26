@@ -359,6 +359,17 @@ html {
     margin-bottom: 16px;
 }
 
+/* ── Product Category Subtitle ───────────────────── */
+
+.product-category {
+    font-size: 20px;
+    font-weight: 300;
+    color: #9ca3af;
+    letter-spacing: 0.01em;
+    margin-bottom: 28px;
+    line-height: 1.3;
+}
+
 /* ── Product / Spec Cards ─────────────────────────── */
 
 .product-card {
@@ -1180,6 +1191,21 @@ body.korean [data-lang="ko"] { display: block; }
     text-transform: uppercase;
     color: #9ca3af;
     text-align: center;
+    line-height: 1.3;
+}
+
+.aspec-brand-name {
+    display: block;
+}
+
+.aspec-brand-type {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.04em;
+    color: #d1d5db;
+    margin-top: 3px;
 }
 
 .aspec-row {
