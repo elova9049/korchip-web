@@ -1102,6 +1102,70 @@ body.korean [data-lang="ko"] { display: block; }
 
 .hover-red:hover { color: #E31837; }
 
+/* ── Technology Section ───────────────────────────── */
+
+.tech-panel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 0 56px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 48px;
+}
+
+.tech-panel-divider {
+    background: #e5e7eb;
+    align-self: stretch;
+}
+
+.tech-panel-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin-bottom: 12px;
+}
+
+.tech-panel-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.tech-panel-body {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.tech-dl {
+    border-top: 1px solid #f3f4f6;
+    padding-top: 20px;
+}
+
+.tech-dl-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 9px 0;
+    border-bottom: 1px solid #f9fafb;
+    font-size: 13px;
+}
+
+.tech-dl-row dt {
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+.tech-dl-row dd {
+    color: #111827;
+    font-weight: 600;
+    margin: 0;
+}
+
 /* ── Responsive (max-width) ───────────────────────── */
 
 @media (max-width: 768px) {
@@ -1113,4 +1177,9 @@ body.korean [data-lang="ko"] { display: block; }
     .product-card,
     .tech-card { padding: 28px; }
     .contact-card { padding: 28px 24px; }
+    .tech-panel-grid {
+        grid-template-columns: 1fr;
+        gap: 40px 0;
+    }
+    .tech-panel-divider { display: none; }
 }
