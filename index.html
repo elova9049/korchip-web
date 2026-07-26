@@ -212,6 +212,16 @@
                             <button class="filter-pill" data-filter="form" data-value="pouch"><span data-lang="en">Pouch</span><span data-lang="ko">파우치</span></button>
                         </div>
                     </div>
+                    <div class="filter-group">
+                        <span class="filter-label" data-lang="en">Temperature</span>
+                        <span class="filter-label" data-lang="ko">동작 온도</span>
+                        <div class="filter-pills">
+                            <button class="filter-pill active" data-filter="temp" data-value="all"><span data-lang="en">All</span><span data-lang="ko">전체</span></button>
+                            <button class="filter-pill" data-filter="temp" data-value="standard"><span data-lang="en">Standard</span><span data-lang="ko">표준</span></button>
+                            <button class="filter-pill" data-filter="temp" data-value="high"><span data-lang="en">High Temp (+85°C)</span><span data-lang="ko">고온 (+85°C)</span></button>
+                            <button class="filter-pill" data-filter="temp" data-value="low"><span data-lang="en">Low Temp (−40°C)</span><span data-lang="ko">저온 (−40°C)</span></button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Table -->
@@ -231,7 +241,7 @@
                         <tbody>
 
                             <!-- ── CHIPCELL CARBON — Coin ── -->
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="standard">
                                 <td><span class="lineup-series">DCL</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ18 Coin</span><span class="lineup-form" data-lang="ko">φ18 코인</span></td>
@@ -240,7 +250,7 @@
                                 <td>−25 ~ +70</td>
                                 <td><a href="datasheets/dcl.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="high">
                                 <td><span class="lineup-series">DCLT</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ18 Coin · High Temp</span><span class="lineup-form" data-lang="ko">φ18 코인 · 고온</span></td>
@@ -249,7 +259,7 @@
                                 <td>−25 ~ +85</td>
                                 <td><a href="datasheets/dclt.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="standard">
                                 <td><span class="lineup-series">DCLH</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ18 Coin · High Voltage</span><span class="lineup-form" data-lang="ko">φ18 코인 · 고전압</span></td>
@@ -258,7 +268,7 @@
                                 <td>−25 ~ +70</td>
                                 <td><a href="datasheets/dclh.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="standard">
                                 <td><span class="lineup-series">DCS</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ11 Coin</span><span class="lineup-form" data-lang="ko">φ11 코인</span></td>
@@ -267,7 +277,7 @@
                                 <td>−25 ~ +70</td>
                                 <td><a href="datasheets/dcs.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="high">
                                 <td><span class="lineup-series">DCST</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ11 Coin · High Temp</span><span class="lineup-form" data-lang="ko">φ11 코인 · 고온</span></td>
@@ -276,7 +286,7 @@
                                 <td>−25 ~ +85</td>
                                 <td><a href="datasheets/dcst.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="low">
                                 <td><span class="lineup-series">DCSP</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ11 Coin · Low Temp</span><span class="lineup-form" data-lang="ko">φ11 코인 · 저온</span></td>
@@ -285,7 +295,7 @@
                                 <td>−40 ~ +70</td>
                                 <td><a href="datasheets/dcsp.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="low high">
                                 <td><span class="lineup-series">DCSR</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ11 Coin · SMD</span><span class="lineup-form" data-lang="ko">φ11 코인 · SMD</span></td>
@@ -294,7 +304,7 @@
                                 <td>−40 ~ +70 / +85</td>
                                 <td><a href="datasheets/dcsr.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="standard">
                                 <td><span class="lineup-series">DCSH</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ11 Coin · High Voltage</span><span class="lineup-form" data-lang="ko">φ11 코인 · 고전압</span></td>
@@ -303,7 +313,7 @@
                                 <td>−25 ~ +70</td>
                                 <td><a href="datasheets/dcsh.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="standard">
                                 <td><span class="lineup-series">DCM</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ9.5 Coin</span><span class="lineup-form" data-lang="ko">φ9.5 코인</span></td>
@@ -312,7 +322,7 @@
                                 <td>−25 ~ +70</td>
                                 <td><a href="datasheets/dcm.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="high">
                                 <td><span class="lineup-series">DCMT</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ9.5 Coin · High Temp</span><span class="lineup-form" data-lang="ko">φ9.5 코인 · 고온</span></td>
@@ -321,7 +331,7 @@
                                 <td>−25 ~ +85</td>
                                 <td><a href="datasheets/dcmt.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="standard">
                                 <td><span class="lineup-series">SM</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ3 / φ4 Coin · SMD</span><span class="lineup-form" data-lang="ko">φ3 / φ4 코인 · SMD</span></td>
@@ -330,7 +340,7 @@
                                 <td>−10 ~ +60</td>
                                 <td><a href="datasheets/sm.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="coin">
+                            <tr class="lineup-row" data-type="carbon" data-form="coin" data-temp="standard">
                                 <td><span class="lineup-series">DMS</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">φ6 Coin · SMD</span><span class="lineup-form" data-lang="ko">φ6 코인 · SMD</span></td>
@@ -341,7 +351,7 @@
                             </tr>
 
                             <!-- ── CHIPCELL CARBON — Radial ── -->
-                            <tr class="lineup-row" data-type="carbon" data-form="radial">
+                            <tr class="lineup-row" data-type="carbon" data-form="radial" data-temp="standard low">
                                 <td><span class="lineup-series">DR</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Radial</span><span class="lineup-form" data-lang="ko">원통형</span></td>
@@ -350,7 +360,7 @@
                                 <td>−25~+70 / −40~+65</td>
                                 <td><a href="datasheets/dr.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="radial">
+                            <tr class="lineup-row" data-type="carbon" data-form="radial" data-temp="standard">
                                 <td><span class="lineup-series">DRL</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Radial · Low ESR</span><span class="lineup-form" data-lang="ko">원통형 · 저ESR</span></td>
@@ -359,7 +369,7 @@
                                 <td>−25 ~ +65</td>
                                 <td><a href="datasheets/drl.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="radial">
+                            <tr class="lineup-row" data-type="carbon" data-form="radial" data-temp="low high">
                                 <td><span class="lineup-series">DRT</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Radial · High Temp</span><span class="lineup-form" data-lang="ko">원통형 · 고온</span></td>
@@ -368,7 +378,7 @@
                                 <td>−40 ~ +85</td>
                                 <td><a href="datasheets/drt.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="radial">
+                            <tr class="lineup-row" data-type="carbon" data-form="radial" data-temp="standard low">
                                 <td><span class="lineup-series">HP</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Radial · High Power</span><span class="lineup-form" data-lang="ko">원통형 · 고출력</span></td>
@@ -377,7 +387,7 @@
                                 <td>−25~+70 / −40~+65</td>
                                 <td><a href="datasheets/hp.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="radial">
+                            <tr class="lineup-row" data-type="carbon" data-form="radial" data-temp="low high">
                                 <td><span class="lineup-series">DRJ</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Radial · No AcN</span><span class="lineup-form" data-lang="ko">원통형 · AcN 무용매</span></td>
@@ -388,7 +398,7 @@
                             </tr>
 
                             <!-- ── CHIPCELL CARBON — Module ── -->
-                            <tr class="lineup-row" data-type="carbon" data-form="module">
+                            <tr class="lineup-row" data-type="carbon" data-form="module" data-temp="low">
                                 <td><span class="lineup-series">DRML</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Module</span><span class="lineup-form" data-lang="ko">모듈</span></td>
@@ -397,7 +407,7 @@
                                 <td>−40 ~ +65</td>
                                 <td><a href="datasheets/drml.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="module">
+                            <tr class="lineup-row" data-type="carbon" data-form="module" data-temp="standard">
                                 <td><span class="lineup-series">DRMH</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Module</span><span class="lineup-form" data-lang="ko">모듈</span></td>
@@ -406,7 +416,7 @@
                                 <td>−25 ~ +70</td>
                                 <td><a href="datasheets/drmh.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="module">
+                            <tr class="lineup-row" data-type="carbon" data-form="module" data-temp="low high">
                                 <td><span class="lineup-series">DRMT</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Module · High Temp</span><span class="lineup-form" data-lang="ko">모듈 · 고온</span></td>
@@ -415,7 +425,7 @@
                                 <td>−40 ~ +85</td>
                                 <td><a href="datasheets/drmt.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="module">
+                            <tr class="lineup-row" data-type="carbon" data-form="module" data-temp="low">
                                 <td><span class="lineup-series">HPML</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Module · High Power</span><span class="lineup-form" data-lang="ko">모듈 · 고출력</span></td>
@@ -424,7 +434,7 @@
                                 <td>−40 ~ +65</td>
                                 <td><a href="datasheets/hpml.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="carbon" data-form="module">
+                            <tr class="lineup-row" data-type="carbon" data-form="module" data-temp="standard">
                                 <td><span class="lineup-series">HPMH</span></td>
                                 <td><span class="lineup-badge lineup-badge-carbon">CHIPCELL CARBON</span></td>
                                 <td><span class="lineup-form" data-lang="en">Module · High Power</span><span class="lineup-form" data-lang="ko">모듈 · 고출력</span></td>
@@ -435,7 +445,7 @@
                             </tr>
 
                             <!-- ── CHIPCELL LTO ── -->
-                            <tr class="lineup-row" data-type="lto" data-form="coin">
+                            <tr class="lineup-row" data-type="lto" data-form="coin" data-temp="standard">
                                 <td><span class="lineup-series">CL Series</span></td>
                                 <td><span class="lineup-badge lineup-badge-lto">CHIPCELL LTO</span></td>
                                 <td><span class="lineup-form" data-lang="en">Coin</span><span class="lineup-form" data-lang="ko">코인</span></td>
@@ -444,7 +454,7 @@
                                 <td>−20 ~ +70</td>
                                 <td><a href="datasheets/cl.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="lto" data-form="radial">
+                            <tr class="lineup-row" data-type="lto" data-form="radial" data-temp="low">
                                 <td><span class="lineup-series">PS Series</span></td>
                                 <td><span class="lineup-badge lineup-badge-lto">CHIPCELL LTO</span></td>
                                 <td><span class="lineup-form" data-lang="en">Radial</span><span class="lineup-form" data-lang="ko">원통형</span></td>
@@ -453,7 +463,7 @@
                                 <td>−40 ~ +70</td>
                                 <td><a href="datasheets/ps.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="lto" data-form="radial">
+                            <tr class="lineup-row" data-type="lto" data-form="radial" data-temp="low">
                                 <td><span class="lineup-series">PE Series</span></td>
                                 <td><span class="lineup-badge lineup-badge-lto">CHIPCELL LTO</span></td>
                                 <td><span class="lineup-form" data-lang="en">Radial</span><span class="lineup-form" data-lang="ko">원통형</span></td>
@@ -462,7 +472,7 @@
                                 <td>−40 ~ +70</td>
                                 <td><a href="datasheets/pe.pdf" class="ds-btn" download><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a></td>
                             </tr>
-                            <tr class="lineup-row" data-type="lto" data-form="pouch">
+                            <tr class="lineup-row" data-type="lto" data-form="pouch" data-temp="low">
                                 <td><span class="lineup-series">Pouch Series</span></td>
                                 <td><span class="lineup-badge lineup-badge-lto">CHIPCELL LTO</span></td>
                                 <td><span class="lineup-form" data-lang="en">Pouch</span><span class="lineup-form" data-lang="ko">파우치</span></td>

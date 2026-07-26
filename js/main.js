@@ -87,13 +87,15 @@ window.addEventListener('scroll', () => {
 // ── Product Lineup Filter ────────────────────────────────
 
 (function () {
-    const activeFilters = { type: 'all', form: 'all' };
+    const activeFilters = { type: 'all', form: 'all', temp: 'all' };
 
     function applyFilters() {
         let visibleCount = 0;
         document.querySelectorAll('.lineup-row').forEach(row => {
+            const tempTags = (row.dataset.temp || '').split(' ');
             const ok = (activeFilters.type === 'all' || row.dataset.type === activeFilters.type) &&
-                       (activeFilters.form === 'all' || row.dataset.form === activeFilters.form);
+                       (activeFilters.form === 'all' || row.dataset.form === activeFilters.form) &&
+                       (activeFilters.temp === 'all' || tempTags.includes(activeFilters.temp));
             row.style.display = ok ? '' : 'none';
             if (ok) visibleCount++;
         });
