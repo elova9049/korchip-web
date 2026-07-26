@@ -548,9 +548,10 @@ html {
 .nav-link.page-active { color: #E31837; }
 
 /* ── Bilingual Visibility ─────────────────────────── */
-/* Keep at the bottom so these rules win over any display: block above */
+/* :root raises specificity to 20, beating any single class (10) or
+   element+class (11) that sets display elsewhere in this file. */
 
-[data-lang="ko"] { display: none; }
+:root [data-lang="ko"] { display: none; }
 body.korean [data-lang="en"] { display: none; }
 body.korean [data-lang="ko"] { display: block; }
 
