@@ -1102,6 +1102,91 @@ body.korean [data-lang="ko"] { display: block; }
 
 .hover-red:hover { color: #E31837; }
 
+/* ── Apple-style Spec Table ──────────────────────── */
+
+.aspec-table {
+    border-top: 1px solid #e5e7eb;
+    margin-bottom: 48px;
+}
+
+.aspec-thead {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    padding: 16px 0 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.aspec-col-head {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    text-align: center;
+}
+
+.aspec-row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    padding: 15px 0;
+    border-bottom: 1px solid #f3f4f6;
+    align-items: center;
+}
+
+.aspec-col-label-cell {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 400;
+}
+
+.aspec-col-val {
+    font-size: 15px;
+    font-weight: 500;
+    color: #111827;
+    text-align: center;
+}
+
+.aspec-series-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 48px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.aspec-series-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.aspec-series-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 9px 0;
+    border-bottom: 1px solid #f9fafb;
+    font-size: 13px;
+    gap: 12px;
+}
+
+.aspec-series-name {
+    font-weight: 500;
+    color: #111827;
+    flex-shrink: 0;
+}
+
+.aspec-series-row > span:not(.aspec-series-name) {
+    color: #9ca3af;
+    text-align: right;
+}
+
 /* ── Technology Section ───────────────────────────── */
 
 .tech-panel-grid {
@@ -1182,4 +1267,10 @@ body.korean [data-lang="ko"] { display: block; }
         gap: 40px 0;
     }
     .tech-panel-divider { display: none; }
+    .aspec-thead { grid-template-columns: 1fr; }
+    .aspec-thead .aspec-col-label-cell { display: none; }
+    .aspec-row { grid-template-columns: 1fr; gap: 4px; }
+    .aspec-col-label-cell { font-weight: 600; color: #111827; margin-bottom: 4px; }
+    .aspec-col-val { text-align: left; font-size: 14px; color: #6b7280; font-weight: 400; }
+    .aspec-series-wrap { grid-template-columns: 1fr; gap: 32px 0; }
 }

@@ -468,108 +468,135 @@
 
         <!-- ── Specs ─────────────────────────────────────────────── -->
 
-        <section class="bg-white py-20 md:py-28 relative" id="specs">
-            <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+        <section class="bg-white py-20 md:py-28" id="specs">
+            <div class="max-w-5xl mx-auto px-6 md:px-12">
 
-                <div class="text-center mb-14 fade-up">
+                <div class="text-center mb-16 fade-up">
                     <span class="section-label" data-lang="en">Specifications</span>
                     <span class="section-label" data-lang="ko">제품 사양</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-lang="en">Technical Specifications</h2>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-lang="ko">기술 사양</h2>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-6">
-
-                    <!-- CHIPCELL CARBON -->
-                    <div class="spec-card fade-up">
-                        <div class="flex items-center gap-2 mb-6">
-                            <span class="w-2 h-2 rounded-full bg-cyan-400 flex-shrink-0"></span>
-                            <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">CHIPCELL CARBON — EDLC</span>
+                <!-- Comparison table -->
+                <div class="aspec-table fade-up">
+                    <div class="aspec-thead">
+                        <div class="aspec-col-label-cell"></div>
+                        <div class="aspec-col-head">CHIPCELL CARBON</div>
+                        <div class="aspec-col-head">CHIPCELL LTO</div>
+                    </div>
+                    <div class="aspec-row">
+                        <div class="aspec-col-label-cell">
+                            <span data-lang="en">Cycle Life</span>
+                            <span data-lang="ko">사이클 수명</span>
                         </div>
-
-                        <div class="spec-kv-grid mb-6">
-                            <div class="spec-kv">
-                                <div class="spec-kv-label" data-lang="en">Cycle Life</div>
-                                <div class="spec-kv-label" data-lang="ko">사이클 수명</div>
-                                <div class="spec-kv-value text-cyan-500">1,000,000+</div>
-                            </div>
-                            <div class="spec-kv">
-                                <div class="spec-kv-label" data-lang="en">Capacitance</div>
-                                <div class="spec-kv-label" data-lang="ko">정전용량</div>
-                                <div class="spec-kv-value">0.033 – 350 F</div>
-                            </div>
-                            <div class="spec-kv">
-                                <div class="spec-kv-label" data-lang="en">Temperature</div>
-                                <div class="spec-kv-label" data-lang="ko">동작 온도</div>
-                                <div class="spec-kv-value">−40 ~ +85°C</div>
-                            </div>
-                            <div class="spec-kv">
-                                <div class="spec-kv-label" data-lang="en">Voltage</div>
-                                <div class="spec-kv-label" data-lang="ko">전압</div>
-                                <div class="spec-kv-value">2.5 – 5.5 V</div>
-                            </div>
+                        <div class="aspec-col-val">1,000,000+</div>
+                        <div class="aspec-col-val">20,000+</div>
+                    </div>
+                    <div class="aspec-row">
+                        <div class="aspec-col-label-cell">
+                            <span data-lang="en">Voltage</span>
+                            <span data-lang="ko">전압</span>
                         </div>
-
-                        <div class="border-t border-gray-100 pt-5">
-                            <p class="text-xs font-semibold text-gray-300 uppercase tracking-widest mb-3" data-lang="en">Series</p>
-                            <p class="text-xs font-semibold text-gray-300 uppercase tracking-widest mb-3" data-lang="ko">시리즈</p>
-                            <div class="space-y-2 text-sm">
-                                <div class="spec-series-row"><span class="spec-series-name">DCL / DCLT / DCLP</span><span data-lang="en">Coin — 0.47~1.5F, up to 85°C</span><span data-lang="ko">코인 — 0.47~1.5F, 최대 85°C</span></div>
-                                <div class="spec-series-row"><span class="spec-series-name">DCS / DCST / DCSP</span><span data-lang="en">Coin — 0.047~0.47F</span><span data-lang="ko">코인 소용량 — 0.047~0.47F</span></div>
-                                <div class="spec-series-row"><span class="spec-series-name">SM</span><span data-lang="en">SMD Coin — 0.033~0.07F</span><span data-lang="ko">SMD 코인 — 0.033~0.07F</span></div>
-                                <div class="spec-series-row"><span class="spec-series-name">DR / DL / HP / DRJ / DRT</span><span data-lang="en">Radial — 1~350F</span><span data-lang="ko">원통형 — 1~350F</span></div>
-                                <div class="spec-series-row"><span class="spec-series-name">DRML / DRMH / HPML / DRMT</span><span data-lang="en">Module — 0.33~7.5F</span><span data-lang="ko">모듈 — 0.33~7.5F</span></div>
-                            </div>
+                        <div class="aspec-col-val">2.5 – 5.5 V</div>
+                        <div class="aspec-col-val">2.4 V</div>
+                    </div>
+                    <div class="aspec-row">
+                        <div class="aspec-col-label-cell">
+                            <span data-lang="en">Operating Temperature</span>
+                            <span data-lang="ko">동작 온도</span>
+                        </div>
+                        <div class="aspec-col-val">−40 ~ +85°C</div>
+                        <div class="aspec-col-val">−40 ~ +70°C</div>
+                    </div>
+                    <div class="aspec-row">
+                        <div class="aspec-col-label-cell">
+                            <span data-lang="en">Capacitance / Capacity</span>
+                            <span data-lang="ko">정전용량 / 용량</span>
+                        </div>
+                        <div class="aspec-col-val">0.033 – 350 F</div>
+                        <div class="aspec-col-val">0.4 mAh – 20 Ah</div>
+                    </div>
+                    <div class="aspec-row">
+                        <div class="aspec-col-label-cell">
+                            <span data-lang="en">Fast Charge</span>
+                            <span data-lang="ko">급속 충전</span>
+                        </div>
+                        <div class="aspec-col-val">—</div>
+                        <div class="aspec-col-val">10C</div>
+                    </div>
+                    <div class="aspec-row">
+                        <div class="aspec-col-label-cell">
+                            <span data-lang="en">Fire / Explosion Risk</span>
+                            <span data-lang="ko">화재·폭발 위험</span>
+                        </div>
+                        <div class="aspec-col-val">—</div>
+                        <div class="aspec-col-val">
+                            <span data-lang="en">None</span>
+                            <span data-lang="ko">없음</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- CHIPCELL LTO -->
-                    <div class="spec-card fade-up delay-100">
-                        <div class="flex items-center gap-2 mb-6">
-                            <span class="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0"></span>
-                            <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">CHIPCELL LTO — Battery</span>
+                <!-- Series lists -->
+                <div class="aspec-series-wrap fade-up delay-100">
+                    <div class="aspec-series-panel">
+                        <p class="aspec-series-title">CHIPCELL CARBON</p>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">DCL / DCLT / DCLP</span>
+                            <span data-lang="en">Coin · 0.47 – 1.5 F · up to 85°C</span>
+                            <span data-lang="ko">코인 · 0.47 – 1.5 F · 최대 85°C</span>
                         </div>
-
-                        <div class="spec-kv-grid mb-6">
-                            <div class="spec-kv">
-                                <div class="spec-kv-label" data-lang="en">Cycle Life</div>
-                                <div class="spec-kv-label" data-lang="ko">사이클 수명</div>
-                                <div class="spec-kv-value text-orange-400">20,000+</div>
-                            </div>
-                            <div class="spec-kv">
-                                <div class="spec-kv-label" data-lang="en">Nominal Voltage</div>
-                                <div class="spec-kv-label" data-lang="ko">공칭 전압</div>
-                                <div class="spec-kv-value">2.4 V</div>
-                            </div>
-                            <div class="spec-kv">
-                                <div class="spec-kv-label" data-lang="en">Fast Charge</div>
-                                <div class="spec-kv-label" data-lang="ko">급속 충전</div>
-                                <div class="spec-kv-value">10C</div>
-                            </div>
-                            <div class="spec-kv">
-                                <div class="spec-kv-label" data-lang="en">Fire Risk</div>
-                                <div class="spec-kv-label" data-lang="ko">화재 위험</div>
-                                <div class="spec-kv-value">0%</div>
-                            </div>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">DCS / DCST / DCSP</span>
+                            <span data-lang="en">Coin · 0.047 – 0.47 F</span>
+                            <span data-lang="ko">코인 · 0.047 – 0.47 F</span>
                         </div>
-
-                        <div class="border-t border-gray-100 pt-5">
-                            <p class="text-xs font-semibold text-gray-300 uppercase tracking-widest mb-3" data-lang="en">Series</p>
-                            <p class="text-xs font-semibold text-gray-300 uppercase tracking-widest mb-3" data-lang="ko">시리즈</p>
-                            <div class="space-y-2 text-sm">
-                                <div class="spec-series-row"><span class="spec-series-name">PS Series</span><span data-lang="en">Radial — 40~100mAh, 10C</span><span data-lang="ko">원통형 — 40~100mAh, 10C</span></div>
-                                <div class="spec-series-row"><span class="spec-series-name">PE Series</span><span data-lang="en">Radial — 12~30mAh, 5C</span><span data-lang="ko">원통형 — 12~30mAh, 5C</span></div>
-                                <div class="spec-series-row"><span class="spec-series-name">CL Series</span><span data-lang="en">Coin — 0.4~1.8mAh, RTC/IoT</span><span data-lang="ko">코인 — 0.4~1.8mAh, RTC/IoT</span></div>
-                                <div class="spec-series-row"><span class="spec-series-name">Pouch Series</span><span data-lang="en">Pouch — 20Ah, ≥20,000 cycles</span><span data-lang="ko">파우치 — 20Ah, 20,000+ 사이클</span></div>
-                            </div>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">SM</span>
+                            <span data-lang="en">SMD Coin · 0.033 – 0.07 F</span>
+                            <span data-lang="ko">SMD 코인 · 0.033 – 0.07 F</span>
+                        </div>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">DR / DL / HP / DRJ / DRT</span>
+                            <span data-lang="en">Radial · 1 – 350 F</span>
+                            <span data-lang="ko">원통형 · 1 – 350 F</span>
+                        </div>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">DRML / DRMH / HPML / DRMT</span>
+                            <span data-lang="en">Module · 0.33 – 7.5 F</span>
+                            <span data-lang="ko">모듈 · 0.33 – 7.5 F</span>
+                        </div>
+                    </div>
+                    <div class="aspec-series-panel">
+                        <p class="aspec-series-title">CHIPCELL LTO</p>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">PS Series</span>
+                            <span data-lang="en">Radial · 40 – 100 mAh · 10C</span>
+                            <span data-lang="ko">원통형 · 40 – 100 mAh · 10C</span>
+                        </div>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">PE Series</span>
+                            <span data-lang="en">Radial · 12 – 30 mAh · 5C</span>
+                            <span data-lang="ko">원통형 · 12 – 30 mAh · 5C</span>
+                        </div>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">CL Series</span>
+                            <span data-lang="en">Coin · 0.4 – 1.8 mAh · RTC / IoT</span>
+                            <span data-lang="ko">코인 · 0.4 – 1.8 mAh · RTC / IoT</span>
+                        </div>
+                        <div class="aspec-series-row">
+                            <span class="aspec-series-name">Pouch Series</span>
+                            <span data-lang="en">Pouch · 20 Ah · ≥ 20,000 cycles</span>
+                            <span data-lang="ko">파우치 · 20 Ah · 20,000+ 사이클</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Certifications -->
-                <div class="mt-12 fade-up delay-200">
-                    <p class="text-xs font-semibold text-gray-300 uppercase tracking-widest text-center mb-4" data-lang="en">Certifications</p>
-                    <p class="text-xs font-semibold text-gray-300 uppercase tracking-widest text-center mb-4" data-lang="ko">인증</p>
+                <div class="mt-10 fade-up delay-200 text-center">
+                    <p class="text-xs font-semibold text-gray-300 uppercase tracking-widest mb-4" data-lang="en">Certifications</p>
+                    <p class="text-xs font-semibold text-gray-300 uppercase tracking-widest mb-4" data-lang="ko">인증</p>
                     <div class="flex flex-wrap justify-center gap-2">
                         <span class="cert-tag">ISO 9001</span>
                         <span class="cert-tag">IATF 16949</span>
