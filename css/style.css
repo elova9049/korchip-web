@@ -522,7 +522,7 @@ html {
 /* ── Page Visibility ──────────────────────────────── */
 
 .page { display: none; }
-.page.active { display: block; }
+.page.active { display: block; min-height: 100vh; }
 
 .nav-link.page-active { color: #E31837; }
 
