@@ -1112,6 +1112,53 @@ body.korean [data-lang="ko"] { display: block; }
 
 .hover-red:hover { color: #E31837; }
 
+/* ── Company Timeline ─────────────────────────────── */
+
+.korchip-timeline {
+    max-width: 600px;
+    margin: 0 auto 64px;
+    border-left: 1px solid #e5e7eb;
+    padding-left: 40px;
+}
+
+.korchip-timeline-item {
+    position: relative;
+    padding-bottom: 44px;
+}
+
+.korchip-timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.korchip-timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -45px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #d1d5db;
+}
+
+.korchip-timeline-year {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin-bottom: 10px;
+}
+
+.korchip-timeline-text {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
 /* ── Apple-style Spec Table ──────────────────────── */
 
 .aspec-table {
