@@ -1115,6 +1115,30 @@ body.korean [data-lang="ko"] { display: block; }
     border-top: 1px solid #f3f4f6;
 }
 
+/* ── IR External Links ────────────────────────────── */
+
+.ir-ext-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #f3f4f6;
+    color: #111827;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+.ir-ext-link:last-child { border-bottom: none; }
+.ir-ext-link:hover { color: #E31837; }
+.ir-ext-arrow {
+    font-size: 18px;
+    color: #9ca3af;
+    transition: color 0.2s;
+    flex-shrink: 0;
+}
+.ir-ext-link:hover .ir-ext-arrow { color: #E31837; }
+
 /* ── Email link hover ─────────────────────────────── */
 
 .hover-red {
