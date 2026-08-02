@@ -1065,6 +1065,12 @@ body.korean [data-lang="ko"] { display: block; }
     border: 1px solid #ffedd5;
 }
 
+.lineup-badge-lithium {
+    background: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
 .lineup-form {
     font-size: 13px;
     color: #6b7280;
